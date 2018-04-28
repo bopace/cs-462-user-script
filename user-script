@@ -3,7 +3,7 @@ yum update -y
 yum install -y httpd24 php56 mysql55-server php56-mysqlnd
 service httpd start
 chkconfig httpd on
-curl -o /var/www/index.html https://raw.githubusercontent.com/bopace/cs-462-user-script/master/index.html
+curl -o /var/www/html/index.html https://raw.githubusercontent.com/bopace/cs-462-user-script/master/index.html
 groupadd www
 usermod -a -G www ec2-user
 chown -R root:www /var/www

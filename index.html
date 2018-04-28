@@ -8,7 +8,10 @@
     <h1>Bo Pace</h1>
     
     <code>
-      https://raw.githubusercontent.com/bopace/cs-462-user-script/master/user-script
+!/bin/bash -e
+curl -O https://raw.githubusercontent.com/bopace/cs-462-user-script/master/user-script
+chmod 755 user-script
+exec ./user-script
     </code>
   </body>
 </html>

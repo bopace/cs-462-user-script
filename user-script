@@ -9,4 +9,4 @@ chown -R root:www /var/www
 chmod 2775 /var/www
 find /var/www -type d -exec chmod 2775 {} +
 find /var/www -type f -exec chmod 0664 {}
-curl --TEMP--
+curl -o /var/www/index.html https://raw.githubusercontent.com/bopace/cs-462-user-script/master/index.html
